@@ -21,7 +21,16 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-console.log(displayNames);
+
+zooAnimals.forEach(function(element){
+
+   let screwPoachers = "Name:" + element.animal_name + ", " + "Scientific: " + element.scientific_name
+
+   displayNames.push(screwPoachers);
+
+})
+
+console.log(displayNames); 
 
 /* Request 2: .map()
 
@@ -29,16 +38,19 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames
-console.log(lowCaseAnimalNames);
+// const lowCaseAnimalNames = [];
+// animal_name.map(function(barkMeow){
+//   return barkMeow.animal_name.toLowerCase();
+// });
 
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals
-console.log(lowPopulationAnimals);
+// const lowPopulationAnimals = population.filter(function(item){
+// })
+// console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
